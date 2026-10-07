@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise Dashboard</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard-layout">
+
+        <!-- Sidebar navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">S</div>
+
+                <div>
+                    <h1>SpendWise</h1>
+                    <p>Personal finance</p>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav" aria-label="Main navigation">
+                <a href="#" class="nav-link active">
+                    <span class="nav-icon">▦</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="nav-icon">↔</span>
+                    <span>Transactions</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="nav-icon">◎</span>
+                    <span>Budgets</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="nav-icon">▥</span>
+                    <span>Reports</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="nav-icon">⚙</span>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-help">
+                <strong>Need help?</strong>
+                <p>Review your spending every week to stay on track.</p>
+                <a href="#">View tips</a>
+            </div>
+        </aside>
+
+        <!-- Main dashboard area -->
+        <main class="dashboard-main">
+
+            <!-- Dashboard header -->
+            <header class="dashboard-header">
+                <div>
+                    <p class="eyebrow">Friday, September 11, 2026</p>
+                    <h2>Good evening, Zamzam</h2>
+                    <p class="header-subtitle">
+                        Here is an overview of your financial activity.
+                    </p>
+                </div>
+
+                <div class="header-actions">
+                    <button
+                        class="notification-button"
+                        type="button"
+                        aria-label="Notifications"
+                    >
+                        ♢
+                    </button>
+
+                    <div class="profile">
+                        <div class="profile-avatar">ZA</div>
+
+                        <div>
+                            <strong>Zamzam Abdi</strong>
+                            <span>Personal account</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Overview cards -->
+            <section class="overview-section" aria-labelledby="overview-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Your overview</p>
+                        <h3 id="overview-title">Financial snapshot</h3>
+                    </div>
+
+                    <button class="period-button" type="button">
+                        This month ▾
+                    </button>
+                </div>
+
+                <div class="overview-cards">
+
+                    <article class="overview-card balance-card" tabindex="0">
+                        <div class="card-top">
+                            <span class="card-label">Available balance</span>
+                            <span class="card-icon">◈</span>
+                        </div>
+
+                        <strong class="card-value">
+                            KSh 20,500
+                        </strong>
+
+                        <div class="card-footer">
+                            <span class="positive">↑ 8.4%</span>
+                            <span>from last month</span>
+                        </div>
+                    </article>
+
+                    <article class="overview-card income-card" tabindex="0">
+                        <div class="card-top">
+                            <span class="card-label">Total income</span>
+                            <span class="card-icon">↗</span>
+                        </div>
+
+                        <strong class="card-value">
+                            KSh 75,000
+                        </strong>
+
+                        <div class="card-footer">
+                            <span class="positive">↑ 5.2%</span>
+                            <span>from last month</span>
+                        </div>
+                    </article>
+
+                    <article class="overview-card expense-card" tabindex="0">
+                        <div class="card-top">
+                            <span class="card-label">Total expenses</span>
+                            <span class="card-icon">↘</span>
+                        </div>
+
+                        <strong class="card-value">
+                            KSh 29,500
+                        </strong>
+
+                        <div class="card-footer">
+                            <span class="negative">↑ 2.1%</span>
+                            <span>from last month</span>
+                        </div>
+                    </article>
+
+                    <article class="overview-card savings-card" tabindex="0">
+                        <div class="card-top">
+                            <span class="card-label">Savings goal</span>
+                            <span class="card-icon">☆</span>
+                        </div>
+
+                        <strong class="card-value">68%</strong>
+
+                        <div class="progress-bar">
+                            <span></span>
+                        </div>
+
+                        <div class="card-footer">
+                            <span>KSh 34,000 saved</span>
+                            <span>of KSh 50,000</span>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Category cards -->
+            <section
+                class="categories-section"
+                aria-labelledby="categories-title"
+            >
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Spending breakdown</p>
+                        <h3 id="categories-title">
+                            This month's categories
+                        </h3>
+                    </div>
+
+                    <a href="#" class="view-link">
+                        View report →
+                    </a>
+                </div>
+
+                <div class="category-grid">
+
+                    <article class="category-card" tabindex="0">
+                        <div class="category-card-header">
+                            <div class="category-icon food-icon">🍽</div>
+                            <span class="category-menu">•••</span>
+                        </div>
+
+                        <h4>Food</h4>
+                        <strong>KSh 2,500</strong>
+                        <p>8.5% of expenses</p>
+
+                        <div class="category-progress">
+                            <span style="width: 35%;"></span>
+                        </div>
+                    </article>
+
+                    <article class="category-card" tabindex="0">
+                        <div class="category-card-header">
+                            <div class="category-icon transport-icon">⌁</div>
+                            <span class="category-menu">•••</span>
+                        </div>
+
+                        <h4>Transport</h4>
+                        <strong>KSh 1,800</strong>
+                        <p>6.1% of expenses</p>
+
+                        <div class="category-progress">
+                            <span style="width: 26%;"></span>
+                        </div>
+                    </article>
+
+                    <article class="category-card" tabindex="0">
+                        <div class="category-card-header">
+                            <div class="category-icon rent-icon">⌂</div>
+                            <span class="category-menu">•••</span>
+                        </div>
+
+                        <h4>Rent</h4>
+                        <strong>KSh 25,000</strong>
+                        <p>84.7% of expenses</p>
+
+                        <div class="category-progress">
+                            <span style="width: 84%;"></span>
+                        </div>
+                    </article>
+
+                    <article class="category-card" tabindex="0">
+                        <div class="category-card-header">
+                            <div class="category-icon entertainment-icon">
+                                ♪
+                            </div>
+
+                            <span class="category-menu">•••</span>
+                        </div>
+
+                        <h4>Entertainment</h4>
+                        <strong>KSh 1,200</strong>
+                        <p>4.1% of expenses</p>
+
+                        <div class="category-progress">
+                            <span style="width: 18%;"></span>
+                        </div>
+                    </article>
+
+                    <article class="category-card" tabindex="0">
+                        <div class="category-card-header">
+                            <div class="category-icon savings-icon">✦</div>
+                            <span class="category-menu">•••</span>
+                        </div>
+
+                        <h4>Savings</h4>
+                        <strong>KSh 34,000</strong>
+                        <p>45.3% of income</p>
+
+                        <div class="category-progress">
+                            <span style="width: 68%;"></span>
+                        </div>
+                    </article>
+
+                    <article class="category-card" tabindex="0">
+                        <div class="category-card-header">
+                            <div class="category-icon utilities-icon">⚡</div>
+                            <span class="category-menu">•••</span>
+                        </div>
+
+                        <h4>Utilities</h4>
+                        <strong>KSh 4,500</strong>
+                        <p>6.0% of income</p>
+
+                        <div class="category-progress">
+                            <span style="width: 30%;"></span>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Recent transactions -->
+            <section
+                class="transactions-section"
+                aria-labelledby="transactions-title"
+            >
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Latest activity</p>
+                        <h3 id="transactions-title">
+                            Recent transactions
+                        </h3>
+                    </div>
+
+                    <a href="#" class="view-link">
+                        See all →
+                    </a>
+                </div>
+
+                <div class="transaction-list">
+
+                    <div class="transaction-item">
+                        <div class="transaction-details">
+                            <div class="transaction-icon food-icon">🍽</div>
+
+                            <div>
+                                <strong>Grocery shopping</strong>
+                                <span>Food · Today, 10:45 AM</span>
+                            </div>
+                        </div>
+
+                        <strong class="transaction-amount expense-amount">
+                            - KSh 2,500
+                        </strong>
+                    </div>
+
+                    <div class="transaction-item">
+                        <div class="transaction-details">
+                            <div class="transaction-icon income-icon">↗</div>
+
+                            <div>
+                                <strong>Monthly salary</strong>
+                                <span>Income · Sep 1, 9:00 AM</span>
+                            </div>
+                        </div>
+
+                        <strong class="transaction-amount income-amount">
+                            + KSh 75,000
+                        </strong>
+                    </div>
+
+                    <div class="transaction-item">
+                        <div class="transaction-details">
+                            <div class="transaction-icon transport-icon">
+                                ⌁
+                            </div>
+
+                            <div>
+                                <strong>Bus fare</strong>
+                                <span>Transport · Sep 2, 7:30 AM</span>
+                            </div>
+                        </div>
+
+                        <strong class="transaction-amount expense-amount">
+                            - KSh 300
+                        </strong>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- WEEK 7: Budget & Expense Controls -->
+            <section class="controls-section" aria-labelledby="controls-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Controls</p>
+                        <h3 id="controls-title">Manage your budget</h3>
+                    </div>
+                </div>
+
+                <div class="controls-grid">
+                    <!-- Set monthly budget -->
+                    <article class="control-card">
+                        <h4>Set Monthly Budget</h4>
+                        <label>
+                            Monthly budget (KSh)
+                            <input type="number" id="monthlyBudgetInput" step="0.01" min="0" placeholder="e.g. 75000">
+                        </label>
+                        <button id="setBudgetBtn" type="button">Set Budget</button>
+                        <p id="budgetStatus"></p>
+                    </article>
+
+                    <!-- Add expense form -->
+                    <article class="control-card">
+                        <h4>Add New Expense</h4>
+                        <form id="expense-form">
+                            <label>
+                                Description
+                                <input type="text" id="expenseDesc" required placeholder="e.g. Grocery shopping">
+                            </label>
+
+                            <label>
+                                Amount (KSh)
+                                <input type="number" id="expenseAmount" step="0.01" min="0.01" required placeholder="e.g. 2500">
+                            </label>
+
+                            <label>
+                                Category
+                                <select id="expenseCategory">
+                                    <option>Food</option>
+                                    <option>Transport</option>
+                                    <option>Rent</option>
+                                    <option>Entertainment</option>
+                                    <option>Utilities</option>
+                                    <option>Other</option>
+                                </select>
+                            </label>
+
+                            <label>
+                                Date
+                                <input type="date" id="expenseDate" required>
+                            </label>
+
+                            <button type="submit">Add Expense</button>
+                        </form>
+                        <p id="expenseStatus"></p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- WEEK 7: Dynamic Dashboard Summary -->
+            <section class="summary-section" aria-labelledby="summary-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Live summary</p>
+                        <h3 id="summary-title">Your updated totals</h3>
+                    </div>
+                </div>
+
+                <div class="overview-cards">
+                    <article class="overview-card">
+                        <div class="card-top">
+                            <span class="card-label">Total expenses</span>
+                            <span class="card-icon">↘</span>
+                        </div>
+                        <strong class="card-value" id="totalExpensesValue">KSh 0</strong>
+                        <div class="card-footer">
+                            <span>Updated live</span>
+                        </div>
+                    </article>
+
+                    <article class="overview-card">
+                        <div class="card-top">
+                            <span class="card-label">Remaining balance</span>
+                            <span class="card-icon">◈</span>
+                        </div>
+                        <strong class="card-value" id="remainingBalanceValue">KSh 0</strong>
+                        <div class="card-footer">
+                            <span id="balanceStatusText"></span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- WEEK 7: Dynamic Transactions List -->
+            <section class="transactions-section" aria-labelledby="dynamic-transactions-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Your transactions</p>
+                        <h3 id="dynamic-transactions-title">Added expenses</h3>
+                    </div>
+                </div>
+
+                <div class="transaction-list" id="dynamicTransactionList">
+                    <!-- Transactions will be inserted here by JavaScript -->
+                </div>
+            </section>
+
+            <footer class="dashboard-footer">
+                <p>
+                    SpendWise Dashboard · Stay informed, spend intentionally.
+                </p>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- Budget button (Week 5/6) -->
+    <button
+        id="startBudget"
+        type="button"
+        style="
+            display: block;
+            margin: 20px auto;
+            padding: 15px 40px;
+            font-size: 16px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        "
+    >
+        💰 Start Budgeting
+    </button>
+
+    <!-- Expense button (Week 5/6) -->
+    <button
+        id="addExpenseBtn"
+        type="button"
+        style="
+            display: block;
+            margin: 20px auto;
+            padding: 15px 40px;
+            font-size: 16px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        "
+    >
+        ➕ Add Expense
+    </button>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
